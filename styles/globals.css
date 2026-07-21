@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+/* ── CSS Custom Properties (design tokens) ─────────────────── */
+:root {
+  --font-inter: "Inter", sans-serif;
+  --font-jetbrains-mono: "JetBrains Mono", monospace;
+
+  /* Light mode */
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --card: #f8fafc;
+
+  /* Dark mode */
+  --background-dark: #0f172a;
+  --foreground-dark: #f1f5f9;
+}
+
+/* ── Base reset & typography ──────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-[var(--background)] text-[var(--foreground)] font-sans;
+  }
+
+  /* Dark mode via class */
+  .dark body {
+    @apply bg-[var(--background-dark)] text-[var(--foreground-dark)];
+  }
+}
+
+/* ── Prose for MDX content ────────────────────────────────── */
+@layer components {
+  .prose-custom {
+    @apply prose prose-slate dark:prose-invert max-w-none;
+  }
+
+  .prose-custom h1,
+  .prose-custom h2,
+  .prose-custom h3 {
+    @apply font-bold text-[var(--foreground)] dark:text-[var(--foreground-dark)];
+  }
+
+  .prose-custom a {
+    @apply text-brand-600 hover:text-brand-700 underline-offset-4;
+  }
+
+  .prose-custom code {
+    @apply bg-brand-50 dark:bg-brand-950/30 text-brand-700 dark:text-brand-300 px-1.5 py-0.5 rounded text-sm font-mono;
+  }
+
+  .prose-custom pre code {
+    @apply bg-slate-900 text-slate-100 p-4 rounded-lg block overflow-x-auto;
+  }
+}
+
+/* ── Utility: gradient text ───────────────────────────────── */
+.gradient-text {
+  @apply bg-gradient-to-r from-brand-600 to-violet-600 bg-clip-text text-transparent;
+}

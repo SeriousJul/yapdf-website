@@ -1,0 +1,2 @@
+TODO: Replace with a real OG image (1200x630).
+Suggested design: yapdf logo + "Native Rust PDF Editor" on a dark gradient background.
