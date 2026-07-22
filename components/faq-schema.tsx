@@ -17,10 +17,10 @@ const softwareSchema = {
     "@type": "Offer",
     price: "0",
     priceCurrency: "USD",
+    description: "Free for personal use. Commercial licenses available.",
   },
   downloadUrl: "https://github.com/SeriousJul/yapdf/releases/latest",
   softwareVersion: "1.0",
-  license: "https://opensource.org/license/mit",
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.8",
@@ -36,10 +36,10 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Is yapdf free?",
+      name: "Is yapdf free to use?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. yapdf is open-source under the MIT OR Apache-2.0 license. Download and use it freely on Linux, macOS, and Windows.",
+        text: "yapdf is free for personal use. For professional or commercial use, a license is required.",
       },
     },
     {
@@ -55,7 +55,7 @@ const faqSchema = {
       name: "How is yapdf different from Adobe Acrobat or Foxit?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "yapdf is open-source, native (not a webview), and built in Rust for performance. It focuses on the core PDF workflow without enterprise bloat.",
+        text: "yapdf is a native (not a webview) PDF editor built in Rust for performance. It focuses on the core PDF workflow without enterprise bloat.",
       },
     },
     {

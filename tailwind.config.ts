@@ -7,10 +7,10 @@ const config: Config = {
     "./lib/**/*.{ts,tsx}",
     "./route-content/**/*.mdx",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
-        // yapdf brand palette — dark, professional, PDF-editor vibes
         brand: {
           50: "#f0f4ff",
           100: "#dbe4ff",

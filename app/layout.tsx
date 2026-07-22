@@ -22,10 +22,9 @@ export const metadata: Metadata = {
   },
   description:
     "A fast, native PDF editor built in Rust. View, annotate, edit pages, fill forms, and more — on Linux, macOS, and Windows.",
-  keywords: [
+keywords: [
     "PDF editor",
     "Rust",
-    "open source",
     "Linux",
     "macOS",
     "Windows",
