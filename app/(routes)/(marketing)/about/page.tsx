@@ -63,10 +63,10 @@ export default function AboutPage() {
       <section className="py-20 sm:py-28">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 space-y-8 text-[var(--muted)] leading-relaxed">
           <p>
-            yapdf was built out of frustration with existing PDF editors. They're either bloated webviews wrapped in Electron, or expensive proprietary tools that treat you like a customer — not a user.
+            yapdf was built out of frustration with existing PDF editors. They&#39;re either bloated webviews wrapped in Electron, or expensive proprietary tools that treat you like a customer — not a user.
           </p>
           <p>
-            We wanted something different: a genuinely native application that starts instantly, uses minimal resources, and respects your privacy by staying fully offline. Built with Rust for safety and performance, with egui for the UI, and Google's PDFium for rendering.
+            We wanted something different: a genuinely native application that starts instantly, uses minimal resources, and respects your privacy by staying fully offline. Built with Rust for safety and performance, with egui for the UI, and Google&#39;s PDFium for rendering.
           </p>
 
           {/* Design Principles */}

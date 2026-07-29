@@ -6,16 +6,16 @@ import { useState, useEffect } from "react";
 
 export default function MarketingLayout({ children }: { children: ReactNode }) {
   const [darkMode, setDarkMode] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    // Check for saved preference or system preference
     const stored = localStorage.getItem("yapdf-dark-mode");
     if (stored === "true" || (!stored && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
       document.documentElement.classList.add("dark");
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setDarkMode(true);
     }
   }, []);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleDark = () => {
     const next = !darkMode;
