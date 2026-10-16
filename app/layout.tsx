@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   description:
     "A fast, native PDF editor built in Rust. View, annotate, edit pages, fill forms, and more — on Linux, macOS, and Windows.",
-keywords: [
+  keywords: [
     "PDF editor",
     "Rust",
     "Linux",
@@ -86,11 +86,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}>{children}</body>
     </html>
   );
 }

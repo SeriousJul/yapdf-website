@@ -6,7 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --max-warnings=0"
+    "lint": "biome ci"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.0",
@@ -24,9 +24,8 @@
     "@types/mdx": "^2.0.0",
     "@types/node": "^26.6.4",
     "@types/react": "^19.3.0",
+    "@biomejs/biome": "^2.5.15",
     "@types/react-dom": "^19.3.0",
-    "eslint": "^9.39.5",
-    "eslint-config-next": "^16.3.8",
     "tailwindcss": "^4.0.0",
     "typescript": "^5.7.0"
   }
